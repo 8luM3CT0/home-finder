@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .headerDiv {
+    @apply sticky
+    top-0
+    z-50
+    grid
+    grid-cols-3
+    bg-white
+    shadow-md
+    p-5
+    md:px-10;
+  }
+
+  .headerLogo {
+    @apply relative
+    flex
+    items-center
+    h-10
+   cursor-pointer
+   my-auto;
+  }
+
+  .headerSearch{
+    @apply
+    pl-5
+    placeholder-gray-400
+    text-gray-600
+    text-sm
+    bg-transparent
+    flex-grow
+    border-gray-300
+    outline-none
+  }
+
+  .headerLink{
+    @apply
+    h-6
+    text-gray-500
+    cursor-pointer
+  }
+
+  .smallCard{
+    @apply
+    m-2
+    mt-5
+    space-x-4
+    cursor-pointer
+    rounded-xl
+    flex 
+    items-center
+    hover:bg-gray-100
+    transition
+    transform
+    duration-150
+    ease-in-out
+    hover:scale-105
+  }
+
+}
