@@ -4,7 +4,8 @@
 
 @layer components {
   .headerDiv {
-    @apply sticky
+    @apply 
+    sticky
     top-0
     z-50
     grid
@@ -58,6 +59,22 @@
     duration-150
     ease-in-out
     hover:scale-105
+  }
+
+  .searchOptions{
+    @apply
+    px-4 
+    py-2 
+    border 
+    rounded-full  
+    cursor-pointer 
+    hover:shadow-lg
+    active:scale-95
+    active:bg-gray-100
+    transition
+    transform
+    duration-100
+    ease-out
   }
 
 }
