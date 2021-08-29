@@ -5,6 +5,7 @@ import Footer from '../components/feed/Footer'
 import { useRouter } from 'next/router'
 import { format } from 'date-fns'
 import SearchResult from '../components/search-result/SearchResult'
+import Map from '../components/map/Map'
 
 function Search ({ searchResults }) {
   const router = useRouter()
@@ -82,6 +83,9 @@ function Search ({ searchResults }) {
               )
             )}
           </div>
+        </section>
+        <section className='hidden lg:inline-flex lg:min-w-[600px]'>
+          <Map searchResults={searchResults} />
         </section>
       </main>
       <Footer />
